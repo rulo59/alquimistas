@@ -1,0 +1,160 @@
+.circulo{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    background-color: aquamarine;
+}
+.ingrediente img{
+    width: 80px;
+}
+
+/* Tabla de ingredientes */
+.tabla-ingredientes {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.grid-ingredientes {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.grid-ingredientes .row {
+    display: flex;
+    gap: 2px;
+}
+
+.grid-ingredientes > .row > div {
+    flex: 1;
+    min-width: 0;
+    height: 70px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #555;
+}
+
+.grid-ingredientes > .row > div:hover {
+    opacity: 0.8;
+}
+
+/* Colores para cada ingrediente */
+.col-seta {
+    background-color: #ddccff !important;
+    color: white;
+}
+
+.col-planta {
+    background-color: #ccffcc !important;
+    color: white;
+}
+
+.col-rana {
+    background-color: #bf8040 !important;
+    color: #333;
+}
+
+.col-pata {
+    background-color: #e6e600 !important;
+    color: #333;
+}
+
+.col-flor {
+    background-color: #3366ff !important;
+    color: #333;
+}
+
+.col-mandragora {
+    background-color: #d1e0e0 !important;
+    color: white;
+}
+
+.col-escorpion {
+    background-color: #ff8080 !important;
+    color: white;
+}
+
+.col-pluma {
+    background-color: #e0e0eb !important;
+    color: #333;
+}
+/* Celda marcada */
+.grid-ingredientes > .row > div.marked::after {
+    content: '✕';
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.grid-ingredientes > .row > div.marked {
+    opacity: 1 !important;
+    position: relative;
+}
+
+/* Composicion tokens */
+.composicion-token {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.circulo-comp {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.circulo-comp.big {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+}
+
+.circulo-comp.small {
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+}
+
+.circulo-comp-bottom {
+    display: flex;
+    gap: 2px;
+}
+
+.circulo-comp.red {
+    background-color: #DC143C;
+}
+
+.circulo-comp.green {
+    background-color: #228B22;
+}
+
+.circulo-comp.blue {
+    background-color: #4169E1;
+}
+
+.col-composicion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    max-width: 70px;
+}

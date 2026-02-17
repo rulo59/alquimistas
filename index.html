@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquimistas - Pirámide de Deducción</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="bg-dark text-white p-5">
+            <div class="row justify-content-center">
+                <div class="col-5"></div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="seta,pluma"></div>
+                </div>
+                <div class="col-5"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-5"></div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="seta,escorpion"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="planta,pluma"></div>
+                </div>
+                <div class="col-5"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4"></div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="seta,mandragora"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="planta,escorpion"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="rana,pluma"></div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4"></div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="seta,flor"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="planta,mandragora"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="rana,escorpion"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="pata,pluma"></div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3"></div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="seta,pata"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="planta,flor"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="rana,mandragora"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="pata,escorpion"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="flor,pluma"></div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3"></div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="seta,ranta"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="planta,pata"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="rana,flor"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="pata,mandragora"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="flor,escorpion"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="mandragora,pluma"></div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="seta,planta"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="planta,ranta"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="rana,pata"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="pata,flor"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="flor,mandragora"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="mandragora,escorpion"></div>
+                </div>
+                <div class="col-1">
+                    <div class="circulo" data-ingredientes="escorpion,pluma"></div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="ingrediente col-1" data-ingrediente="seta">
+                    <img src="img/seta.jpg" alt="Seta" class="img-fluid">
+                </div>
+                <div class="ingrediente col-1" data-ingrediente="planta">
+                    <img src="img/planta.jpg" alt="Planta" class="img-fluid">
+                </div>
+                <div class="ingrediente col-1" data-ingrediente="rana">
+                    <img src="img/rana.jpg" alt="Rana" class="img-fluid">
+                </div>
+                <div class="ingrediente col-1" data-ingrediente="pata">
+                    <img src="img/pata.jpg" alt="Pata" class="img-fluid">
+                </div> 
+                <div class="ingrediente col-1" data-ingrediente="flor">
+                    <img src="img/flor.jpg" alt="Flor" class="img-fluid">
+                </div>
+                <div class="ingrediente col-1" data-ingrediente="mandragora">
+                    <img src="img/mandragora.jpg" alt="Mandragora" class="img-fluid">
+                </div>
+                <div class="ingrediente col-1" data-ingrediente="escorpion">
+                    <img src="img/escorpion.jpg" alt="Escorpión" class="img-fluid">
+                </div>
+                <div class="ingrediente col-1" data-ingrediente="pluma">
+                    <img src="img/pluma.jpg" alt="Pluma" class="img-fluid">
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+        <div class="tabla-ingredientes mt-5">
+            <div class="grid-ingredientes">
+                <!-- 1. R+ g+ b+ -->
+                <div class="row">
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red big">+</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">+</div>
+                                <div class="circulo-comp blue small">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-seta"></div>
+                    <div class="col-planta"></div>
+                    <div class="col-rana"></div>
+                    <div class="col-pata"></div>
+                    <div class="col-flor"></div>
+                    <div class="col-mandragora"></div>
+                    <div class="col-escorpion"></div>
+                    <div class="col-pluma"></div>
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red big">+</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">+</div>
+                                <div class="circulo-comp blue small">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2. R+ g- b- -->
+                <div class="row">
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red big">+</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">&minus;</div>
+                                <div class="circulo-comp blue small">&minus;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-seta"></div>
+                    <div class="col-planta"></div>
+                    <div class="col-rana"></div>
+                    <div class="col-pata"></div>
+                    <div class="col-flor"></div>
+                    <div class="col-mandragora"></div>
+                    <div class="col-escorpion"></div>
+                    <div class="col-pluma"></div>
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red big">+</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">&minus;</div>
+                                <div class="circulo-comp blue small">&minus;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3. r+ G+ b- -->
+                <div class="row">
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red small">+</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green big">+</div>
+                                <div class="circulo-comp blue small">&minus;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-seta"></div>
+                    <div class="col-planta"></div>
+                    <div class="col-rana"></div>
+                    <div class="col-pata"></div>
+                    <div class="col-flor"></div>
+                    <div class="col-mandragora"></div>
+                    <div class="col-escorpion"></div>
+                    <div class="col-pluma"></div>
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red small">+</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green big">+</div>
+                                <div class="circulo-comp blue small">&minus;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4. r- G- b+ -->
+                <div class="row">
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red small">&minus;</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green big">&minus;</div>
+                                <div class="circulo-comp blue small">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-seta"></div>
+                    <div class="col-planta"></div>
+                    <div class="col-rana"></div>
+                    <div class="col-pata"></div>
+                    <div class="col-flor"></div>
+                    <div class="col-mandragora"></div>
+                    <div class="col-escorpion"></div>
+                    <div class="col-pluma"></div>
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red small">&minus;</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green big">&minus;</div>
+                                <div class="circulo-comp blue small">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5. r+ g- B+ -->
+                <div class="row">
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red small">+</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">&minus;</div>
+                                <div class="circulo-comp blue big">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-seta"></div>
+                    <div class="col-planta"></div>
+                    <div class="col-rana"></div>
+                    <div class="col-pata"></div>
+                    <div class="col-flor"></div>
+                    <div class="col-mandragora"></div>
+                    <div class="col-escorpion"></div>
+                    <div class="col-pluma"></div>
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red small">+</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">&minus;</div>
+                                <div class="circulo-comp blue big">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6. r- g+ B- -->
+                <div class="row">
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red small">&minus;</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">+</div>
+                                <div class="circulo-comp blue big">&minus;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-seta"></div>
+                    <div class="col-planta"></div>
+                    <div class="col-rana"></div>
+                    <div class="col-pata"></div>
+                    <div class="col-flor"></div>
+                    <div class="col-mandragora"></div>
+                    <div class="col-escorpion"></div>
+                    <div class="col-pluma"></div>
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red small">&minus;</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">+</div>
+                                <div class="circulo-comp blue big">&minus;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7. R- g+ b- -->
+                <div class="row">
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red big">&minus;</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">+</div>
+                                <div class="circulo-comp blue small">&minus;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-seta"></div>
+                    <div class="col-planta"></div>
+                    <div class="col-rana"></div>
+                    <div class="col-pata"></div>
+                    <div class="col-flor"></div>
+                    <div class="col-mandragora"></div>
+                    <div class="col-escorpion"></div>
+                    <div class="col-pluma"></div>
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red big">&minus;</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">+</div>
+                                <div class="circulo-comp blue small">&minus;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8. R- g- b+ -->
+                <div class="row">
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red big">&minus;</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">&minus;</div>
+                                <div class="circulo-comp blue small">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-seta"></div>
+                    <div class="col-planta"></div>
+                    <div class="col-rana"></div>
+                    <div class="col-pata"></div>
+                    <div class="col-flor"></div>
+                    <div class="col-mandragora"></div>
+                    <div class="col-escorpion"></div>
+                    <div class="col-pluma"></div>
+                    <div class="col-composicion">
+                        <div class="composicion-token">
+                            <div class="circulo-comp red big">&minus;</div>
+                            <div class="circulo-comp-bottom">
+                                <div class="circulo-comp green small">&minus;</div>
+                                <div class="circulo-comp blue small">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
